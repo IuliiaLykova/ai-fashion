@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Start",
+    "examples": "Beispiele",
+    "process": "Prozess",
+    "useCases": "Use-Cases",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": " – schnelle Konzepte & Visuals",
+    "title": "AI Fashion Landing",
+    "description": "Ich verbinde Design-Gefühl, Frontend-Skills und AI-Tools, um klare, moderne Fashion-Visuals und Microsites zu erstellen.",
+    "cta": "Projekt starten",
+    "examples": "Beispiele ansehen"
+  },
+  "use-cases": {
+  "title": "Was KI für Fashion bringt",
+  "description": "Minimaler Aufwand – maximale visuelle Wirkung.",
+  "cards": [
+      { "id": "tryon",  "title": "Virtuelle Anprobe", "description": "Outfits ohne Studio und Stylist: direkt am Model/Kunden." },
+      { "id": "drafts", "title": "Look-Entwürfe",     "description": "Schnelle Silhouetten, Stoffe und Paletten vor der Produktion." },
+      { "id": "ads",    "title": "Kampagnen-Visuals", "description": "Kreative Bilder/Videos für Social & Landingpages in Stunden." }
+    ]
+},
+  "footer": {
+    "rights": "Alle Rechte vorbehalten"
+  }
+}

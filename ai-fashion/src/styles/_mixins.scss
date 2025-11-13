@@ -1,0 +1,10 @@
+@mixin after_abs {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+}

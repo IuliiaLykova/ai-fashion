@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "examples": "Examples",
+    "process": "Process",
+    "useCases": "Use-cases",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "AI Fashion Landing",
+    "subtitle": " — fast concepts & visuals",
+    "description": "I combine design sense, front-end skills and AI tools to create clean, modern fashion visuals and micro-sites.",
+    "cta": "Start a project",
+    "examples": "See examples"
+  },
+  "use-cases": {
+  "title": "What AI Brings to Fashion",
+  "description": "Minimal budget — maximum visual output.",
+  "cards": [
+      { "id": "tryon",   "title": "Virtual try-on",  "description": "Dress a model/client without studio and stylist." },
+      { "id": "drafts",  "title": "Look drafts",     "description": "Quick silhouettes, fabrics, palettes before production." },
+      { "id": "ads",     "title": "Campaign visuals","description": "Creative images/videos for socials and landing pages in hours." }
+    ]
+},
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}
