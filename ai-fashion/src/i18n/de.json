@@ -14,13 +14,86 @@
     "examples": "Beispiele ansehen"
   },
   "use-cases": {
-  "title": "Was KI für Fashion bringt",
-  "description": "Minimaler Aufwand – maximale visuelle Wirkung.",
-  "cards": [
-      { "id": "tryon",  "title": "Virtuelle Anprobe", "description": "Outfits ohne Studio und Stylist: direkt am Model/Kunden." },
-      { "id": "drafts", "title": "Look-Entwürfe",     "description": "Schnelle Silhouetten, Stoffe und Paletten vor der Produktion." },
-      { "id": "ads",    "title": "Kampagnen-Visuals", "description": "Kreative Bilder/Videos für Social & Landingpages in Stunden." }
+    "title": "Was KI für Fashion bringt",
+    "description": "Minimaler Aufwand – maximale visuelle Wirkung.",
+    "cards": [
+      {
+        "id": "tryon",
+        "title": "Virtuelle Anprobe",
+        "description": "Outfits ohne Studio und Stylist: direkt am Model/Kunden."
+      },
+      {
+        "id": "drafts",
+        "title": "Look-Entwürfe",
+        "description": "Schnelle Silhouetten, Stoffe und Paletten vor der Produktion."
+      },
+      {
+        "id": "ads",
+        "title": "Kampagnen-Visuals",
+        "description": "Kreative Bilder/Videos für Social & Landingpages in Stunden."
+      }
     ]
+  },
+  "examples": {
+    "title": "Beispiele",
+    "cards": [
+      {
+        "id": "street",
+        "caption": "Streetwear / Virtual Fit",
+        "description": "Interaktive, KI-gestützte virtuelle Anprobe."
+      },
+      {
+        "id": "runway",
+        "caption": "Runway Mood / Stilisiert",
+        "description": "KI-generierte Moodboards und kampagnenartige Konzepte."
+      },
+      {
+        "id": "studio",
+        "caption": "Studio Packshot",
+        "description": "Hochvolumige KI-Produktfotografie für E-Commerce."
+      },
+      {
+        "id": "campaign",
+        "caption": "Campaign Visual",
+        "description": "Hyperrealistische Werbevisuals, erstellt mit KI."
+      },
+      {
+        "id": "editorial",
+        "caption": "Editorial / Portrait",
+        "description": "Magazine-inspirierte Editorial-Porträts mit KI."
+      },
+      {
+        "id": "anim",
+        "caption": "Animation Still",
+        "description": "KI-basierte Prototypen für Video- und Motion-Content."
+      }
+    ]
+  },
+  "process": {
+  "title": "So funktioniert es",
+  "steps": [
+    {
+      "id": "brief",
+      "title": "1. Briefing",
+      "description": "Wir klären Stil, Referenzen, Formate und Zeitrahmen."
+    },
+    {
+      "id": "drafts",
+      "title": "2. Entwürfe",
+      "description": "Ich erstelle Varianten, wir wählen die besten und optimieren sie."
+    },
+    {
+      "id": "final",
+      "title": "3. Final",
+      "description": "Retusche, Export und Vorbereitung für Web, Print oder Video."
+    }
+  ]
+},
+"cta": {
+  "title": "Bereit für den zukünftigen Drop?",
+  "subtitle": "Schreiben Sie kurz Ihre Aufgabe — ich sende heute schon erste Varianten.",
+  "write": "Schreiben",
+  "portfolio": "Portfolio"
 },
   "footer": {
     "rights": "Alle Rechte vorbehalten"

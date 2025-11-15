@@ -1,14 +1,29 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n({ useScope: 'global' })
+</script>
+
 <template>
-  <section class="section" id="contact">
-    <div class="container card" style="padding:28px; text-align:center">
-      <h2 class="text-gradient" style="margin-bottom:.5rem">
-        Готовы примерить будущий дроп?
+  <section class="cta dark" id="contact">
+    <div class="container">
+      <h2>
+        {{ t('cta.title') }}
       </h2>
-      <p>Напишите пару строк о задаче — пришлю варианты уже сегодня.</p>
-      <div style="margin-top:16px; display:flex; gap:12px; justify-content:center">
-        <a href="mailto:iulia.shreyder@gmail.com" class="btn">Написать</a>
-        <a href="https://portfolio-2025-kappa-ten.vercel.app/" target="_blank" class="btn btn--ghost">Портфолио</a>
+
+      <p>{{ t('cta.subtitle') }}</p>
+
+      <div class="flex-center">
+        <a href="mailto:iulia.shreyder@gmail.com" class="btn">
+          {{ t('cta.write') }}
+        </a>
+
+        <a href="https://portfolio-2025-kappa-ten.vercel.app/"
+           target="_blank"
+           class="btn btn--ghost">
+          {{ t('cta.portfolio') }}
+        </a>
       </div>
+
     </div>
   </section>
 </template>

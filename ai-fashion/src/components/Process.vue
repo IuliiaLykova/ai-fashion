@@ -1,19 +1,28 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm } = useI18n({ useScope: 'global' })
+
+// Берём массив шагов из языка
+const steps = computed(() => (tm('process.steps') as any[]) ?? [])
+</script>
+
 <template>
   <section class="section" id="process">
     <div class="container">
-      <h2>Как это работает</h2>
+      <h2>{{ t('process.title') }}</h2>
+
       <div class="grid-3" style="margin-top:24px">
-        <div class="card" style="padding:20px">
-          <h3>1. Бриф</h3>
-          <p>Стиль, референсы, форматы, сроки.</p>
-        </div>
-        <div class="card" style="padding:20px">
-          <h3>2. Черновые</h3>
-          <p>Выбираем лучшие варианты; корректируем.</p>
-        </div>
-        <div class="card" style="padding:20px">
-          <h3>3. Финал</h3>
-          <p>Ретушь, экспорт, подготовка под веб/печать/видео.</p>
+        <div
+          v-for="step in steps"
+          :key="step.id"
+          class="card"
+          style="padding:20px"
+        >
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.text }}</p>
+          <p>{{ step.description }}</p>
         </div>
       </div>
     </div>

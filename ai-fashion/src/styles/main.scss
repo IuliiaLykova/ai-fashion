@@ -11,7 +11,7 @@
 html,
 body,
 #app {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -101,6 +101,21 @@ section {
     @media (max-width: $bp-sm) {
         padding: 56px 0;
     }
+
+    &.dark .container {
+        background: $black;
+        border-radius: $border-radius-xl;
+        color: $white;
+        text-align: center;
+
+        .btn:hover {
+            box-shadow: .3rem .3rem .5rem rgba($white, 0.5);
+        }
+
+        .btn--ghost {
+            background: $white;
+        }
+    }
 }
 
 /* templates */
@@ -153,11 +168,53 @@ section {
         height: 64px;
         padding: $padding;
 
+        /* --- БУРГЕР-КНОПКА --- */
+        .nav-toggle {
+            display: none; // по умолчанию скрыта (десктоп)
+            width: 40px;
+            height: 40px;
+            border-radius: $border-radius-xl;
+            border: 1px solid rgba(0, 0, 0, .15);
+            background: transparent;
+            cursor: pointer;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+
+            span {
+                display: block;
+                width: $burger-width; // например, 18px
+                height: 2px;
+                border-radius: 999px;
+                background: $black;
+                transition: $transition;
+            }
+
+            &.nav-toggle--open {
+                span:nth-child(1) {
+                    transform: translateY(6px) rotate(45deg);
+                }
+
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+
+                span:nth-child(3) {
+                    transform: translateY(-6px) rotate(-45deg);
+                }
+            }
+        }
 
         .logo {
             text-decoration: none;
             color: $black;
-            font-size: 30px;
+            font-size: 20px;
+
+            @media screen and (min-width:$bp-sm) {
+                font-size: 30px;
+            }
         }
 
         .nav {
@@ -189,22 +246,31 @@ section {
                     }
                 }
             }
-
         }
 
         .lang-switcher {
             display: flex;
             flex-wrap: wrap;
-            gap: 4px;
+            gap: 2px;
+
+            @media screen and (min-width:$bp-sm) {
+                gap: 4px;
+            }
 
             .pill {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
                 opacity: .7;
                 border-radius: $border-radius-xl;
                 border: 1px solid rgba(0, 0, 0, .15);
                 cursor: pointer;
                 transition: $transition;
+
+                @media screen and (min-width:$bp-sm) {
+                    width: 40px;
+                    height: 40px;
+                }
+
 
 
                 &.active {
@@ -219,7 +285,42 @@ section {
                     background: $main;
                     color: $black;
                 }
+            }
+        }
 
+        /* --- Мобилька --- */
+        @media (max-width: 700px) {
+            .nav {
+                position: absolute;
+                inset-inline: 0;
+                top: 64px;
+                padding: 0.75rem $padding;
+                background: rgba(255, 255, 255, .95);
+                backdrop-filter: blur(12px);
+                border-bottom: 1px solid $beige;
+
+                display: none; // по умолчанию спрятано
+                flex-direction: column;
+                gap: .5rem;
+
+                a {
+                    padding: .4rem 0;
+                }
+
+                &.nav--open {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            /* показываем бургер на мобилке */
+            .nav-toggle {
+                display: inline-flex;
+            }
+
+            /* немного подвигаем переключатель языков ближе к бургеру */
+            .lang-switcher {
+                margin-left: .5rem;
             }
         }
     }
@@ -249,16 +350,33 @@ section {
     overflow: hidden;
     position: relative;
 
+    &:hover {
+        .card__title {
+            right: $padding;
+            left: 20%;
+            text-align: right;
+
+            &::after {
+                border-radius: $border-radius-lg 0 0 $border-radius-lg;
+                right: - $padding;
+
+            }
+        }
+    }
+
     img {
         display: flex;
         aspect-ratio: 1 / 1;
         width: 100%;
     }
 
-    &__title {
+    .card__title {
         position: absolute;
         top: 50%;
+        left: $padding;
+        right: 20%;
         z-index: 1;
+        transition: $transition;
 
         &::after {
             content: '';
@@ -267,16 +385,23 @@ section {
             background: rgba($main, 0.5);
             position: absolute;
             inset: 0;
+            transition: $transition;
             z-index: -1;
             transform: translate(-50%, -50%);
             top: 50%;
             left: 50%;
-            width: 150%;
+            width: calc(100% + 2*$padding);
             border-radius: 0 $border-radius-lg $border-radius-lg 0;
         }
     }
 
     &_text {
         padding: $padding;
+    }
+}
+
+.footer {
+    .container {
+        text-align: center;
     }
 }

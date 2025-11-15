@@ -14,14 +14,87 @@
     "examples": "See examples"
   },
   "use-cases": {
-  "title": "What AI Brings to Fashion",
-  "description": "Minimal budget — maximum visual output.",
-  "cards": [
-      { "id": "tryon",   "title": "Virtual try-on",  "description": "Dress a model/client without studio and stylist." },
-      { "id": "drafts",  "title": "Look drafts",     "description": "Quick silhouettes, fabrics, palettes before production." },
-      { "id": "ads",     "title": "Campaign visuals","description": "Creative images/videos for socials and landing pages in hours." }
+    "title": "What AI Brings to Fashion",
+    "description": "Minimal budget — maximum visual output.",
+    "cards": [
+      {
+        "id": "tryon",
+        "title": "Virtual try-on",
+        "description": "Dress a model/client without studio and stylist."
+      },
+      {
+        "id": "drafts",
+        "title": "Look drafts",
+        "description": "Quick silhouettes, fabrics, palettes before production."
+      },
+      {
+        "id": "ads",
+        "title": "Campaign visuals",
+        "description": "Creative images/videos for socials and landing pages in hours."
+      }
     ]
-},
+  },
+  "examples": {
+    "title": "Examples",
+    "cards": [
+      {
+        "id": "street",
+        "caption": "Streetwear / Virtual Fit",
+        "description": "Interactive virtual try-on powered by AI."
+      },
+      {
+        "id": "runway",
+        "caption": "Runway Mood / Stylized",
+        "description": "AI-generated collection mood and campaign-style concepts."
+      },
+      {
+        "id": "studio",
+        "caption": "Studio Packshot",
+        "description": "High-volume AI product photography for e-commerce."
+      },
+      {
+        "id": "campaign",
+        "caption": "Campaign Visual",
+        "description": "Hyper-realistic advertising visuals created with AI."
+      },
+      {
+        "id": "editorial",
+        "caption": "Editorial / Portrait",
+        "description": "Digital editorial-style portraits and magazine-inspired imagery."
+      },
+      {
+        "id": "anim",
+        "caption": "Animation Still",
+        "description": "AI-generated motion and video content prototypes."
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "id": "brief",
+        "title": "1. Brief",
+        "description": "We define style, references, formats and deadlines."
+      },
+      {
+        "id": "drafts",
+        "title": "2. Drafts",
+        "description": "I generate options, we pick the best ones and refine them."
+      },
+      {
+        "id": "final",
+        "title": "3. Final",
+        "description": "Retouching, export and preparation for web, print or video."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to try your future drop?",
+    "subtitle": "Write a few lines about your project — I'll send first drafts today.",
+    "write": "Write",
+    "portfolio": "Portfolio"
+  },
   "footer": {
     "rights": "All rights reserved"
   }
